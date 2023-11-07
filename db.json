@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "name": "Vivaan - fine Indian",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/1/32109459.jpg",
+      "price": "REGULAR",
+      "description": "Vivaan is Modern Indian Cuisine serving dishes from different regions of India. We carefully select our ingredients and use them to make authentic Indian recipes and our chef puts his modern flair and twists to the dishes.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/32109461.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32459786.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32484701.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32484708.jpg"
+      ],
+      "open_time": "14:30:00.000Z",
+      "close_time": "21:30:00.000Z",
+      "slug": "vivaan-fine-indian-cuisine-ottawa",
+      "location_id": 5,
+      "cuisine_id": 5
+    },
+    {
+      "name": "RamaKrishna Indian",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/2/47417441.jpg",
+      "price": "CHEAP",
+      "description": "With 20 years of experience cooking in the finest restaurants, our chef is excited to present their vision to you and all our guests. Our caring and committed staff will ensure you have a fantastic experience with us.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/47417455.png",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47417456.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/47417457.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47417458.jpg"
+      ],
+      "open_time": "12:30:00.000Z",
+      "close_time": "22:00:00.000Z",
+      "slug": "ramakrishna-indian-restaurant-ottawa",
+      "location_id": 4,
+      "cuisine_id": 4
+    },
+    {
+      "name": "Coconut Lagoon",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/3/48545745.jpg",
+      "price": "EXPENSIVE",
+      "description": "At Coconut Lagoon prepare yourselves for a most memorable journey through South Indian cuisine and feast on high quality food of inimitable flavour, aroma and originality in the vibrant setting of Coconut Lagoon.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/30045353.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/2/48545766.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/30045356.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/49399187.jpg"
+      ],
+      "open_time": "17:30:00.000Z",
+      "close_time": "22:00:00.000Z",
+      "slug": "coconut-lagoon-ottawa",
+      "location_id": 6,
+      "cuisine_id": 6
+    },
+    {
+      "name": "Last Train to Delhi",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/3/26429498.jpg",
+      "price": "REGULAR",
+      "description": "Welcome to Last Train to Delhi. We are a progressive Indian restaurant in the beautiful Glebe community in Ottawa. Our speciality is Northern Indian food, classics like Murg Mahkini and some modern dishes like Crispy Shrimp. We are a small cozy restaurant, so make sure that you reserve through OpenTable.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/29477326.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/29777084.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32104059.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/32104066.jpg"
+      ],
+      "open_time": "10:00:00.000Z",
+      "close_time": "21:00:00.000Z",
+      "slug": "last-train-to-delhi-ottawa",
+      "location_id": 7,
+      "cuisine_id": 7
+    },
+    {
+      "name": "Adrak Yorkville",
+      "main_image": "https://resizer.otstatic.com/v2/photos/wide-huge/4/47914200.jpg",
+      "price": "EXPENSIVE",
+      "description": "Namaste and welcome to Adrak - a place where food unites all. We take you through a journey of the past and present, as we hope to encourage thought-provoking conversations amid elevated Indian food.",
+      "images": [
+        "https://resizer.otstatic.com/v2/photos/xlarge/3/47914185.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/3/47914186.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47980632.jpg",
+        "https://resizer.otstatic.com/v2/photos/xlarge/1/47980634.jpg"
+      ],
+      "open_time": "16:00:00.000Z",
+      "close_time": "21:00:00.000Z",
+      "slug": "adrak-yorkville-toronto",
+      "location_id": 8,
+      "cuisine_id": 8
+    }
+  ]
+}
