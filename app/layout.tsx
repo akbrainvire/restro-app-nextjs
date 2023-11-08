@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import NextLoader from "./components/NextLoader";
 import "./globals.css";
 
 export default function RootLayout({

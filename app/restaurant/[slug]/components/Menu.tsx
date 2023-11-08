@@ -1,7 +1,9 @@
 import React from "react";
 import MenuCard from "./MenuCard";
 
-type Props = {};
+type Props = {
+  items: string[];
+};
 
 const Menu = (props: Props) => {
   return (
@@ -11,7 +13,7 @@ const Menu = (props: Props) => {
           <h1 className="font-bold text-4xl">Menu</h1>
         </div>
         <div className="flex flex-wrap justify-between">
-          <MenuCard />
+          <MenuCard items={props.items} />
         </div>
       </div>
     </main>

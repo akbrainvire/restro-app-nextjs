@@ -1,36 +1,60 @@
-import React from "react";
+import Link from "next/link";
+import React, { ReactElement } from "react";
+import supabase from "../../config/supabaseClient";
 
-type Props = {};
-
-const SearchSideBar = (props: Props) => {
+const SearchSideBar = ({
+  locationData,
+  fetchCuisineData,
+  searchParameters,
+}: any) => {
   return (
     <div className="w-1/5">
-      <div className="border-b pb-4">
+      <div className="border-b pb-4 flex flex-col">
         <h1 className="mb-2">Region</h1>
-        <p className="font-light text-reg">Toronto</p>
-        <p className="font-light text-reg">Ottawa</p>
-        <p className="font-light text-reg">Montreal</p>
-        <p className="font-light text-reg">Hamilton</p>
-        <p className="font-light text-reg">Kingston</p>
-        <p className="font-light text-reg">Niagara</p>
+        {locationData.data?.map((placeObj: any) => {
+          // return console.log(placeObj.name);
+          return (
+            <Link
+              href={{
+                pathname: "/search",
+                query: { ...searchParameters, country: placeObj.name },
+              }}
+              key={placeObj.id}
+              className="font-light text-reg"
+            >
+              {placeObj.name}
+            </Link>
+          );
+        })}
       </div>
-      <div className="border-b pb-4 mt-3">
+      <div className="border-b pb-4 mt-3 flex flex-col">
         <h1 className="mb-2">Cuisine</h1>
-        <p className="font-light text-reg">Mexican</p>
-        <p className="font-light text-reg">Italian</p>
-        <p className="font-light text-reg">Chinese</p>
+        {fetchCuisineData.data?.map((style: any) => {
+          return (
+            <Link
+              href={{
+                pathname: "/search",
+                query: { ...searchParameters, cuisine: style.name },
+              }}
+              key={style.id}
+              className="font-light text-reg"
+            >
+              {style.name}
+            </Link>
+          );
+        })}
       </div>
       <div className="mt-3 pb-4">
         <h1 className="mb-2">Price</h1>
         <div className="flex">
           <button className="border w-full text-reg font-light rounded-l p-2">
-            $
+            CHEAP
           </button>
           <button className="border-r border-t border-b w-full text-reg font-light p-2">
-            $$
+            REGULAR
           </button>
           <button className="border-r border-t border-b w-full text-reg font-light p-2 rounded-r">
-            $$$
+            EXPENSIVE
           </button>
         </div>
       </div>

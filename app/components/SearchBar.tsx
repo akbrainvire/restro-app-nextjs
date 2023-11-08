@@ -13,7 +13,7 @@ const SearchBar = (props: Props) => {
       <input
         className="rounded  mr-3 p-2 w-[450px]"
         type="text"
-        placeholder="State, city or town"
+        placeholder="Country"
         value={location}
         onChange={(e: any) => setLocation(e.target.value)}
       />
@@ -23,10 +23,11 @@ const SearchBar = (props: Props) => {
           if (location === "banana") {
             return;
           }
-          router.push("/search");
+          router.push(`/search?country=${location}`);
+          setLocation("");
         }}
       >
-        Lets go
+        Let's go
       </button>
     </div>
   );

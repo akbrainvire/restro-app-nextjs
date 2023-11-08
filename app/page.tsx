@@ -32,6 +32,7 @@ export default async function Home(): Promise<any> {
   const fetchData = await supabase
     .from("restaurants")
     .select(`*, cuisine( * ), location(*)`);
+  // console.log(fetchData);
   // const cuisineData = await supabase.from("cuisine").select();
   // const location = await supabase.from("location").select();
 
