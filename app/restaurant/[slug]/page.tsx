@@ -8,6 +8,7 @@ import Reviews from "./components/Reviews";
 
 import supabase from "../../config/supabaseClient";
 import ReservationCard from "./components/ReservationCard";
+import { notFound } from "next/navigation";
 
 interface IDATA {
   name: string;
@@ -33,6 +34,10 @@ const RestaurantDetails = async (slug: any) => {
   // console.log(fetchData.data);
 
   const data: IDATA = fetchData?.data[0];
+
+  if (fetchData.data.length < 1) {
+    notFound();
+  }
 
   // console.log(fetchData.data.images);
   return (

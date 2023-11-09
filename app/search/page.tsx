@@ -10,16 +10,63 @@ type Props = {
 
 async function Search({ searchParams }: Props) {
   const searchQuery = searchParams?.country.toUpperCase();
-  const searchQueryCuisine = searchParams?.cuisine.toUpperCase();
-  const searchQueryPrice = searchParams?.price.toUpperCase();
-  // console.log(searchParams);
+  const searchQueryCuisine = searchParams?.cuisine?.toUpperCase();
+
   const searchParameters = {
     country: searchQuery,
     cuisine: searchQueryCuisine,
-    price: searchQueryPrice,
+    price: searchParams?.price?.toUpperCase(),
   };
   // console.log(searchQuery);
 
+  // let dataFetch: any = {};
+
+  // const getData = async () => {
+  //   if (searchParameters.country) {
+  //     const { data, error } = await supabase
+  //       .from("location")
+  //       .select("*")
+  //       .eq("name", `${searchParameters.country}`);
+  //     console.log(data);
+  //   }
+
+  //   if (searchParameters.cuisine) {
+  //     const cuisine = await supabase
+  //       .from("cuisine")
+  //       .select()
+  //       .eq("name", `${searchParameters.cuisine}`);
+
+  //     const cuisineID = cuisine.data;
+
+  //     const { data, error } = await supabase
+  //       .from("restaurants")
+  //       .select()
+  //       .eq("cuisine_id", `${searchParameters.cuisine}`);
+  //     // .select("restaurants(*), cuisine(*)");
+  //     // .filter("name", "eq", `${searchParameters.country}`)
+  //     // .filter("cuisine.name", "eq", `${searchParameters.cuisine}`);
+  //     console.log(data, "here");
+  //     console.log(error, "error");
+
+  //     dataFetch = data;
+  //   }
+
+  //   getData();
+
+  //   if (searchParameters.price) {
+  //     const { data, error } = await supabase
+  //       .from("restaurants")
+  //       .select()
+  //       .filter("name", "eq", `${searchParameters.country}`)
+  //       .filter("cuisine.name", "eq", `${searchParameters.cuisine}`)
+  //       .filter("price", "eq", `${searchParameters.price}`);
+  //     console.log(data, "here");
+
+  //     dataFetch = data;
+  //   }
+  // };
+
+  ///////////////
   let fetchData;
   const locationId: any = await supabase
     .from("location")
